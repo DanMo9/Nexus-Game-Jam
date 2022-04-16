@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-   public List<ToolData> Equipped { get; private set; }
+   public List<ToolData> Equipped { get; } = new List<ToolData>();
    
    [SerializeField]
    private InventoryButton[] buttons;

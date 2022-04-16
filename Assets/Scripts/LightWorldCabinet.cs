@@ -1,8 +1,10 @@
+using System.Collections.Generic;
+
 public class LightWorldCabinet : InteractableObject
 {
-    public override bool Use(ToolData toolData = null)
+    public override bool Use(List<ToolData> toolData = null)
     {
-        if (toolData == null || toolData.type != ToolData.ToolType.LightCabinetKey)
+        if (!HasEquipped(toolData, ToolData.ToolType.LightCabinetKey))
             return false;
         
         //TODO OPEN cabinet
