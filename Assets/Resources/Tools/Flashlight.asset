@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   description: Lights up the area
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: e805c12ced6f2124e8006c582364e4d3, type: 3}
