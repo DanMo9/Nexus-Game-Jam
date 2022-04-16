@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6956d0be84584a34bd269f522f23b3b2, type: 3}
   m_Name: Doll Hair
   m_EditorClassIdentifier: 
-  type: 0
+  type: 7
   description: Eww nows its even creppier
   sprite: {fileID: 0}

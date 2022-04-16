@@ -13,7 +13,8 @@ public class ToolData : ScriptableObject
         Cotton,
         Doll,
         DollHair,
-        Glue
+        Glue,
+        Box
     }
     
     public ToolType type;

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 8
   description: Repairs broken objects
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: db834057981c39d469e128edea653938, type: 3}
