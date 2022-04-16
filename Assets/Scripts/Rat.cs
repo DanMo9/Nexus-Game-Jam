@@ -57,8 +57,7 @@ public class Rat : MonoBehaviour
         {
             foreach (var interactableObject in interactableObjects)
             {
-                //TODO pass in tool
-                if (!interactableObject.Use())
+                if (!interactableObject.Use(inventory.Equipped))
                 {
                     messageDisplay.SetMessage(interactableObject.hint);
                 }

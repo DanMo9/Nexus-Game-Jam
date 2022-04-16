@@ -7,5 +7,5 @@ public abstract class InteractableObject : MonoBehaviour
 {
     public string hint;
 
-    public abstract bool Use(Tool tool = null);
+    public abstract bool Use(ToolData toolData = null);
 }
