@@ -13,7 +13,8 @@ public class MessageDisplay : MonoBehaviour
     private float timeLeft; 
     private string message;
     private bool isDisplaying;
-
+    private string indicatorText = "";
+    
     public void SetMessage(string message, float duration = 0)
     {
         textMesh.text = message;
@@ -21,15 +22,35 @@ public class MessageDisplay : MonoBehaviour
         isDisplaying = true;
     }
 
+    public void SetObjectIndicator()
+    {
+        indicatorText = "Press E to interact";
+    }
+
+    public void SetPickupIndicator()
+    {
+        indicatorText = "Press E to pick up";
+    }
+    
+    public void ClearIndicator()
+    {
+        indicatorText = "";
+    }
+    
     private void Update()
     {
-        if (!isDisplaying) return;
-        
-        timeLeft -= Time.deltaTime;
-        if (timeLeft <= 0)
+        if (isDisplaying)
         {
-            textMesh.text = "";
-            isDisplaying = false;
+            timeLeft -= Time.deltaTime;
+            if (timeLeft <= 0)
+            {
+                textMesh.text = "";
+                isDisplaying = false;
+            }
+        }
+        else if (textMesh.text != indicatorText)
+        {
+            textMesh.text = indicatorText;
         }
     }
 }

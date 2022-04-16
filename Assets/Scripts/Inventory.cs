@@ -17,11 +17,12 @@ public class Inventory : MonoBehaviour
       for (var i = 0; i < buttons.Length; i++)
       {
          var button = buttons[i];
+         var buttonIdx = i;
          button.button.onClick.AddListener(() =>
          {
-            if (tools.Count >= i)
+            if (tools.Count >= buttonIdx)
             {
-               var toolData = tools[i];
+               var toolData = tools[buttonIdx];
                if (toolData.Equals(Equipped))
                {
                   Equipped = null;
@@ -39,18 +40,22 @@ public class Inventory : MonoBehaviour
 
    public void AddTool(ToolData toolData)
    {
-      tools.Add(toolData);
+      if (tools.Contains(toolData)) return;
       
-      var image = buttons[tools.Count].GetComponent<Image>();
+      var image = buttons[tools.Count].GetComponentInChildren<Image>();
       image.sprite = toolData.sprite;
       image.color = Color.white;
+      
+      tools.Add(toolData);
    }
 
    public void RemoveTool(ToolData toolData)
    {
+      if (!tools.Contains(toolData)) return;
+      
       var toolIndex = tools.IndexOf(toolData);
       
-      var image = buttons[toolIndex].GetComponent<Image>();
+      var image = buttons[toolIndex].GetComponentInChildren<Image>();
       image.sprite = null;
       image.color = Color.clear;
       

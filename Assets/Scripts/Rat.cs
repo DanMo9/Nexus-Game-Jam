@@ -14,6 +14,7 @@ public class Rat : MonoBehaviour
     public GameObject darkWorldMouse;
     
     private List<InteractableObject> interactableObjects = new List<InteractableObject>();
+    private List<Tool> nearbyTools = new List<Tool>();
 
     private void Awake()
     {
@@ -45,7 +46,14 @@ public class Rat : MonoBehaviour
 
     private void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E) && interactableObjects.Count > 0)
+        SetInteractionText();
+
+        InteractWithObjects();
+    }
+
+    private void InteractWithObjects()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && (interactableObjects.Count > 0 || nearbyTools.Count > 0))
         {
             foreach (var interactableObject in interactableObjects)
             {
@@ -55,6 +63,34 @@ public class Rat : MonoBehaviour
                     messageDisplay.SetMessage(interactableObject.hint);
                 }
             }
+
+            List<Tool> toRemove = new List<Tool>();
+            foreach (var nearbyTool in nearbyTools)
+            {
+                inventory.AddTool(nearbyTool.toolData);
+                toRemove.Add(nearbyTool);
+            }
+
+            foreach (var toolToRemove in toRemove)
+            {
+                Destroy(toolToRemove.gameObject);
+            }
+        }
+    }
+
+    private void SetInteractionText()
+    {
+        if (nearbyTools.Count > 0)
+        {
+            messageDisplay.SetPickupIndicator();
+        }
+        else if (interactableObjects.Count > 0)
+        {
+            messageDisplay.SetObjectIndicator();
+        }
+        else
+        {
+            messageDisplay.ClearIndicator();
         }
     }
 
@@ -65,7 +101,12 @@ public class Rat : MonoBehaviour
         {
             interactableObjects.Add(interactableObject);
         }
-     
+        
+        var tool = other.gameObject.GetComponent<Tool>();
+        if (tool != null)
+        {
+            nearbyTools.Add(tool);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -76,6 +117,11 @@ public class Rat : MonoBehaviour
             interactableObjects.Remove(interactableObject);
         }
         
+        var tool = other.gameObject.GetComponent<Tool>();
+        if (tool != null)
+        {
+            nearbyTools.Remove(tool);
+        }
     }
     
     public void ChangeWorld(World world)
