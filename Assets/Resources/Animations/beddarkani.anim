@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Darkbathroomani
+  m_Name: beddarkani
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: a50c8ccdca0374349a91c8c6c5c63ec4, type: 3}
+      value: {fileID: 21300000, guid: 613dfb1651cf9c0448d70ff571458dbd, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: cfe21cf943ac52640b2bb0d2a6e03208, type: 3}
+      value: {fileID: 21300000, guid: 760ce74a28d772844a1191914474de13, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: 10ffb7990c76dcf44bd593ff0260711f, type: 3}
+      value: {fileID: 21300000, guid: 585d3d32101aa7b4c81c03fe00a06467, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: a50c8ccdca0374349a91c8c6c5c63ec4, type: 3}
-    - {fileID: 21300000, guid: cfe21cf943ac52640b2bb0d2a6e03208, type: 3}
-    - {fileID: 21300000, guid: 10ffb7990c76dcf44bd593ff0260711f, type: 3}
+    - {fileID: 21300000, guid: 613dfb1651cf9c0448d70ff571458dbd, type: 3}
+    - {fileID: 21300000, guid: 760ce74a28d772844a1191914474de13, type: 3}
+    - {fileID: 21300000, guid: 585d3d32101aa7b4c81c03fe00a06467, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
