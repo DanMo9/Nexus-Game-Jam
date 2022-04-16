@@ -12,7 +12,7 @@ public class InventoryButton : MonoBehaviour
     void Start()
     {
         button = GetComponent<Button>();
-        outline = GetComponent<Outline>();
+        outline = GetComponentInChildren<Outline>();
         outline.enabled = false;
     }
 

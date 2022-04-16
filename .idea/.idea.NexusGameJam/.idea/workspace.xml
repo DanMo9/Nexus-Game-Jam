@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073CF49-ED70-4E95-8B8A-66D540DEA948/f8/898045a4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -24,8 +25,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Mouse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldCabinet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MessageDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryButton.cs" />
       </list>
@@ -55,10 +56,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16504">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17420">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16504" />
+      <option name="pid" value="17420" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -73,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650111382490</updated>
-      <workItem from="1650111417740" duration="10004000" />
+      <workItem from="1650111417740" duration="12911000" />
     </task>
     <servers />
   </component>
@@ -159,5 +160,37 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.-349.1080.1880@0.0.2560.1040" timestamp="1650128611620" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs</url>
+          <line>24</line>
+          <properties documentPath="D:\Game Jam\April15\NexusGameJam\Assets\Scripts\Inventory.cs" initialLine="24">
+            <startOffsets>
+              <option value="607" />
+            </startOffsets>
+            <endOffsets>
+              <option value="637" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs</url>
+          <line>21</line>
+          <properties documentPath="D:\Game Jam\April15\NexusGameJam\Assets\Scripts\Inventory.cs" initialLine="21">
+            <startOffsets>
+              <option value="516" />
+            </startOffsets>
+            <endOffsets>
+              <option value="537" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
