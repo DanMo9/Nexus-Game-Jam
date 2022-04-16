@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 public class DarkWorldBearCat : InteractableObject
 {
-    public override bool Use(List<ToolData> toolData)
+    public override bool Use(Rat rat)
     {
-        if (!HasEquipped(toolData, ToolData.ToolType.Thread, ToolData.ToolType.Cotton))
+        if (!HasEquipped(rat.inventory.Equipped, ToolData.ToolType.Thread, ToolData.ToolType.Cotton))
             return false;
         
         //TODO OPEN cabinet

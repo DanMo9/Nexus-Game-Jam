@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 public class DollHair : InteractableObject
 {
-    public override bool Use(List<ToolData> toolData = null)
+    public override bool Use(Rat rat)
     {
-        if (!HasEquipped(toolData, ToolData.ToolType.Scissor))
+        if (!HasEquipped(rat.inventory.Equipped, ToolData.ToolType.Scissor))
             return false;
         
         //TODO OPEN cabinet
