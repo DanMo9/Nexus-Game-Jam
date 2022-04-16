@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-   public ToolData Equipped { get; private set; }
+   public List<ToolData> Equipped { get; private set; }
    
    [SerializeField]
    private InventoryButton[] buttons;
@@ -23,14 +23,14 @@ public class Inventory : MonoBehaviour
             if (tools.Count >= buttonIdx)
             {
                var toolData = tools[buttonIdx];
-               if (toolData.Equals(Equipped))
+               if (Equipped.Contains(toolData))
                {
-                  Equipped = null;
+                  Equipped.Remove(toolData);
                   button.SetUnEquipped();
                }
                else
                {
-                  Equipped = toolData;
+                  Equipped.Add(toolData);
                   button.SetEquipped();
                }
             }
