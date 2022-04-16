@@ -7,8 +7,9 @@ using UnityEngine;
 public abstract class InteractableObject : MonoBehaviour
 {
     public string hint;
+    public bool used;
 
-    public abstract bool Use(List<ToolData> toolData = null);
+    public abstract bool Use(Rat rat);
 
     protected bool HasEquipped(List<ToolData> equipped, params ToolData.ToolType[] types) 
     {

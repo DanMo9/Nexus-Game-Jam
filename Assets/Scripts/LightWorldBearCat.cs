@@ -1,13 +1,29 @@
+using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class LightWorldBearCat : InteractableObject
 {
-    public override bool Use(List<ToolData> toolData = null)
+    public Sprite rippedSprite;
+    public ToolData key;
+    public Transform keySpawn;
+    public GameObject keyPrefab;
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
     {
-        if (!HasEquipped(toolData, ToolData.ToolType.Scissor))
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    public override bool Use(Rat rat)
+    {
+        if (!HasEquipped(rat.inventory.Equipped, ToolData.ToolType.Scissor))
             return false;
         
-        //TODO OPEN cabinet
+        spriteRenderer.sprite = rippedSprite;
+        
+        var keyTool = GameObject.Instantiate(keyPrefab);
+        keyTool.transform.position = keySpawn.transform.position;
         
         return true;
     }

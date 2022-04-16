@@ -42,7 +42,7 @@ public class Inventory : MonoBehaviour
    {
       if (tools.Contains(toolData)) return;
       
-      var image = buttons[tools.Count].GetComponentInChildren<Image>();
+      var image = buttons[tools.Count].image;
       image.sprite = toolData.sprite;
       image.color = Color.white;
       
@@ -55,7 +55,7 @@ public class Inventory : MonoBehaviour
       
       var toolIndex = tools.IndexOf(toolData);
       
-      var image = buttons[toolIndex].GetComponentInChildren<Image>();
+      var image = buttons[toolIndex].image;
       image.sprite = null;
       image.color = Color.clear;
       

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   description: Opens locked doors
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 929fecdfb1846664cb6e010b8eea12c6, type: 3}
