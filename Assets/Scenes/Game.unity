@@ -206,7 +206,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &106423794
 PolygonCollider2D:
@@ -306,6 +306,63 @@ PolygonCollider2D:
       - {x: 1.04, y: 0.24}
       - {x: 1.01, y: 0.26999998}
       - {x: 0.97999996, y: 0.26}
+--- !u!1001 &327449155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4759622
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0169482
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794435, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616694075644794439, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+      propertyPath: m_Name
+      value: KeyLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
 --- !u!1 &347390216 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6401260384465413681, guid: b603ef00a5bb300479ee6568158a369d, type: 3}
@@ -454,7 +511,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &373430435
 PolygonCollider2D:
@@ -710,7 +767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759387939
 GameObject:
@@ -818,7 +875,7 @@ Transform:
   m_Children:
   - {fileID: 410872217}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &759387943
 PolygonCollider2D:
@@ -1017,7 +1074,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &952883256
 PrefabInstance:
@@ -1531,7 +1588,7 @@ Transform:
   m_Children:
   - {fileID: 952883257}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1497408578
 GameObject:
@@ -1565,7 +1622,7 @@ Transform:
   - {fileID: 1805617181}
   - {fileID: 1851412180}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1505966416
 GameObject:
@@ -1909,7 +1966,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
 --- !u!60 &1989074892
 PolygonCollider2D:
@@ -2332,6 +2389,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 42fd3a23c45d79248be384133f22b976, type: 2}
     - target: {fileID: 953553519, guid: 87137bd21cc85564387b15330746f116, type: 3}
+      propertyPath: keySpawn
+      value: 
+      objectReference: {fileID: 2125005989}
+    - target: {fileID: 953553519, guid: 87137bd21cc85564387b15330746f116, type: 3}
+      propertyPath: keyPrefab
+      value: 
+      objectReference: {fileID: 616694075644794439, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
+    - target: {fileID: 953553519, guid: 87137bd21cc85564387b15330746f116, type: 3}
       propertyPath: rippedSprite
       value: 
       objectReference: {fileID: 21300000, guid: f3199b4b8a4c4244a85b44df73632953, type: 3}
@@ -2400,10 +2465,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1821444853, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3802488230087987630, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
       propertyPath: m_Name
       value: Rat

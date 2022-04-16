@@ -57,9 +57,15 @@ public class Rat : MonoBehaviour
         {
             foreach (var interactableObject in interactableObjects)
             {
+                if (interactableObject.used) continue;
+                
                 if (!interactableObject.Use(this))
                 {
                     messageDisplay.SetMessage(interactableObject.hint);
+                }
+                else
+                {
+                    interactableObject.used = true;
                 }
             }
 

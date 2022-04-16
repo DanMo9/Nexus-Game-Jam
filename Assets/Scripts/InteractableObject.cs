@@ -7,6 +7,7 @@ using UnityEngine;
 public abstract class InteractableObject : MonoBehaviour
 {
     public string hint;
+    public bool used;
 
     public abstract bool Use(Rat rat);
 

@@ -7,6 +7,7 @@ public class LightWorldBearCat : InteractableObject
     public Sprite rippedSprite;
     public ToolData key;
     public Transform keySpawn;
+    public GameObject keyPrefab;
     private SpriteRenderer spriteRenderer;
 
     private void Start()
@@ -21,8 +22,7 @@ public class LightWorldBearCat : InteractableObject
         
         spriteRenderer.sprite = rippedSprite;
         
-        var keyTool = new GameObject("Key").AddComponent<Tool>();
-        keyTool.toolData = key;
+        var keyTool = GameObject.Instantiate(keyPrefab);
         keyTool.transform.position = keySpawn.transform.position;
         
         return true;
