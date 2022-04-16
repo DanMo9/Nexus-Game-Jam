@@ -1,8 +1,8 @@
-public class LightWorldCabinet : InteractableObject
+public class DollHair : InteractableObject
 {
     public override bool Use(ToolData toolData = null)
     {
-        if (toolData == null || toolData.type != ToolData.ToolType.LightCabinetKey)
+        if (toolData == null || toolData.type != ToolData.ToolType.Scissor)
             return false;
         
         //TODO OPEN cabinet
