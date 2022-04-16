@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="InteractableObject.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
+          <e p="InventoryButton.cs" t="Include" />
           <e p="LightWorldCabinet.cs" t="Include" />
           <e p="MessageDisplay.cs" t="Include" />
           <e p="Mirror.cs" t="Include" />

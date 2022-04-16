@@ -61,17 +61,21 @@ public class Rat : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         var interactableObject = other.gameObject.GetComponent<InteractableObject>();
-        if (interactableObject == null || interactableObjects.Contains(interactableObject)) return;
+        if (interactableObject != null && !interactableObjects.Contains(interactableObject))
+        {
+            interactableObjects.Add(interactableObject);
+        }
      
-        interactableObjects.Add(interactableObject);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         var interactableObject = other.gameObject.GetComponent<InteractableObject>();
-        if (interactableObject == null) return;
+        if (interactableObject != null)
+        {
+            interactableObjects.Remove(interactableObject);
+        }
         
-        interactableObjects.Add(interactableObject);
     }
     
     public void ChangeWorld(World world)
