@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Rat : MonoBehaviour
@@ -89,7 +90,7 @@ public class Rat : MonoBehaviour
         {
             messageDisplay.SetPickupIndicator();
         }
-        else if (interactableObjects.Count > 0)
+        else if (interactableObjects.Count > 0 && interactableObjects.Any(x => !x.used))
         {
             messageDisplay.SetObjectIndicator();
         }
