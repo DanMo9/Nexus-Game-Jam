@@ -10,6 +10,7 @@ public class ExitMenu : MonoBehaviour
     public Button exitButton;
     public GameObject window;
     public Rat rat;
+    public IntroCutScene cutScene;
 
     private void Start()
     {
@@ -35,7 +36,8 @@ public class ExitMenu : MonoBehaviour
             }
             else
             {
-                rat.EnableMovement();
+                if (!cutScene.IsRunning)
+                    rat.EnableMovement();
             }
         }
     }

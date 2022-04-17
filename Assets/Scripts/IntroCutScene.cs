@@ -10,7 +10,7 @@ public class IntroCutScene : MonoBehaviour
     public bool skipCutscene;
     public TextMeshProUGUI dialogueTextMesh;
     private Rat rat;
-    private 
+    public bool IsRunning = false;
     
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,7 @@ public class IntroCutScene : MonoBehaviour
         {
             rat = GetComponent<Rat>();
             rat.DisableMovement();
+            IsRunning = true;
             StartCoroutine(Cutscene());
         }
     }
@@ -34,5 +35,6 @@ public class IntroCutScene : MonoBehaviour
         dialogueTextMesh.text = "";
         dialogueTextMesh.gameObject.SetActive(false);
         rat.EnableMovement();
+        IsRunning = false;
     }
 }

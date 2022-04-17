@@ -7002,6 +7002,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3802488230087987631, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
   m_PrefabInstance: {fileID: 3802488230382617234}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1529607893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1529607892, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
+  m_PrefabInstance: {fileID: 3802488230382617234}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22280ddc0de05bd46be230d17bede91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1582616347
 GameObject:
   m_ObjectHideFlags: 0
@@ -10644,6 +10655,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 675510343, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
+      propertyPath: cutScene
+      value: 
+      objectReference: {fileID: 1529607893}
     - target: {fileID: 846254910, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
       propertyPath: flashlightSpot
       value: 
