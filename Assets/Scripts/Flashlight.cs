@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -17,12 +18,13 @@ public class Flashlight : MonoBehaviour
         spriteShapeRenderer.enabled = false;
         inventory.OnEquipped += data =>
         {
-            if (data.type == ToolData.ToolType.Flashlight) spriteShapeRenderer.enabled = true;
+            ;
+            if (data.type == ToolData.ToolType.Flashlight && rat.inventory.Equipped.Any(x => x.type == ToolData.ToolType.Batteries)) spriteShapeRenderer.enabled = true;
         };  
         
         inventory.OnUnEquipped += data =>
         {
-            if (data.type == ToolData.ToolType.Flashlight) spriteShapeRenderer.enabled = false;
+            if (data.type == ToolData.ToolType.Flashlight ||data.type == ToolData.ToolType.Batteries) spriteShapeRenderer.enabled = false;
         };  
     }
 

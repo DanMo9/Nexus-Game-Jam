@@ -12,6 +12,7 @@ public class LightWorldSink : InteractableObject
             return false;
         
         water.SetActive(true);
+        GetComponent<PolygonCollider2D>().enabled = false;
         
         return true;
     }
