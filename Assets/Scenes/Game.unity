@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0563f764b7d645f68f6a84792b3b1108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: I dont want to help you!
+  hint: I dont want to help you! You hurt me!
   used: 0
   fixedGo: {fileID: 2103115992}
   keySpawn: {fileID: 1493161423}
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01905fa1e88d4ca58b8c19f73d32b654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: It appears to be broken
+  hint: It's broken. I can't go through.
   used: 0
   mirror: {fileID: 403689839}
   fixedMirror: {fileID: 21300000, guid: 07a32011ec2b634449033fdd04fa050b, type: 3}
