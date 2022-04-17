@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
    public List<ToolData> Equipped { get; } = new List<ToolData>();
+   public Action<ToolData> OnEquipped = t => {}; 
    
    [SerializeField]
    private InventoryButton[] buttons;
@@ -31,6 +32,7 @@ public class Inventory : MonoBehaviour
                else
                {
                   Equipped.Add(toolData);
+                  OnEquipped(toolData);
                   button.SetEquipped();
                }
             }
