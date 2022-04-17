@@ -13,6 +13,7 @@ public class Rat : MonoBehaviour
     
     public GameObject lightWorldMouse;
     public GameObject darkWorldMouse;
+    public Transform flashlightSpot;
     
     public AudioClip PickUpSound;
     

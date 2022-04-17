@@ -49,7 +49,7 @@ public class Flashlight : MonoBehaviour
 
     private void Update()
     {
-        transform.position = rat.transform.position;
-        transform.rotation = rat.transform.rotation;
+        transform.position = rat.flashlightSpot.position;
+        transform.rotation = rat.flashlightSpot.rotation;
     }
 }

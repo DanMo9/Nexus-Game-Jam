@@ -2512,6 +2512,37 @@ MonoBehaviour:
   onUseSound: {fileID: 8300000, guid: cd401313719f2fe4484e60b5bf8e9122, type: 3}
   mirror: {fileID: 403689839}
   fixedMirror: {fileID: 21300000, guid: 07a32011ec2b634449033fdd04fa050b, type: 3}
+--- !u!1 &558667289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558667290}
+  m_Layer: 0
+  m_Name: flashlightPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &558667290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558667289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.701, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1529607891}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565553298
 GameObject:
   m_ObjectHideFlags: 0
@@ -6966,6 +6997,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4290dc13e41e94c8dbd64a2607b781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1529607891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3802488230087987631, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
+  m_PrefabInstance: {fileID: 3802488230382617234}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1582616347
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,7 +7550,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: 90abb61fff932774ea009ea1f78e6d23, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -7571,11 +7607,19 @@ SpriteShapeRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Color: {r: 0.7510325, g: 0.68235296, b: 1, a: 0.5882353}
   m_MaskInteraction: 0
-  m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_ShapeTexture: {fileID: 2800000, guid: b281b91a70a624a0da1c43adc1c30c7b, type: 3}
+  m_Sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
     m_Center: {x: 0.0015968084, y: 2.773345, z: 0}
     m_Extent: {x: 1.0040011, y: 2.7573771, z: 0}
@@ -7592,7 +7636,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1797622297
 Rigidbody2D:
@@ -10600,6 +10644,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 846254910, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
+      propertyPath: flashlightSpot
+      value: 
+      objectReference: {fileID: 558667290}
     - target: {fileID: 1529607892, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
       propertyPath: skipCutscene
       value: 0
@@ -10618,7 +10666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802488230087987631, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3802488230087987631, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
       propertyPath: m_LocalPosition.x
