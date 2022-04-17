@@ -7,10 +7,12 @@ public class DarkWorldBearCat : InteractableObject
     public Transform keySpawn;
     public GameObject keyPrefab;
     private SpriteRenderer spriteRenderer;
+    private PolygonCollider2D collider;
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        collider = GetComponent<PolygonCollider2D>();
         fixedGo.SetActive(false);
     }
 
@@ -22,6 +24,7 @@ public class DarkWorldBearCat : InteractableObject
         var keyTool = GameObject.Instantiate(keyPrefab);
         keyTool.transform.position = keySpawn.transform.position;
         
+        collider.enabled = false;
         spriteRenderer.enabled = false;
         fixedGo.SetActive(true);
         
