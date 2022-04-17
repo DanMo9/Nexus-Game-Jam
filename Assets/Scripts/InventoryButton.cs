@@ -11,14 +11,13 @@ public class InventoryButton : MonoBehaviour
     public Image image;
     private Outline outline;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         button = GetComponent<Button>();
         outline = GetComponentInChildren<Outline>();
         outline.enabled = false;
     }
-
+    
     public void SetToolSprite(ToolData toolData)
     {
         image.sprite = toolData.sprite;

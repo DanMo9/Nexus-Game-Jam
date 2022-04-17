@@ -2570,6 +2570,7 @@ MonoBehaviour:
   minAlpha: 0.7
   maxAlpha: 1
   frequency: 4
+  fadeOutTime: 6
 --- !u!1001 &586337095
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b55320f-8685-4f2a-96d9-e7ba5f807535" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusGameJam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusGameJam/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NexusGameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NexusGameJam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Rat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Rat.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DarkRoomBeforeFlashlight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DarkRoomBeforeFlashlight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Darkness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Darkness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LightWorldBedsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LightWorldBedsideTable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Universal Sound FX/FABRIC_CLOTHING/FABRIC_Movement_Fast_01_mono.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Universal Sound FX/FABRIC_CLOTHING/FABRIC_Movement_Fast_01_mono.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +59,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Note.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Number.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KeycodeUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldBedsideTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldBearCat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DollDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldCrackedMirror.cs" />
@@ -61,18 +66,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldSink.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ToolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ExitMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Darkness.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DarkRoomBeforeFlashlight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IntroCutScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mirror.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Music.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldBedsideTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Darkness.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DarkRoomBeforeFlashlight.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +97,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds\NexusGameJam.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Game Jam\April15\NexusGameJam\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -119,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650111382490</updated>
       <workItem from="1650111417740" duration="32881000" />
-      <workItem from="1650193082148" duration="10161000" />
+      <workItem from="1650193082148" duration="12008000" />
     </task>
     <servers />
   </component>
@@ -201,9 +215,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1114" y="236" key="RiderGenerateDialog/0.0.2560.1040/2560.-349.1080.1880@0.0.2560.1040" timestamp="1650120795379" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1650204345357">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1650206149969">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.-349.1080.1880@0.0.2560.1040" timestamp="1650204345357" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.-349.1080.1880@0.0.2560.1040" timestamp="1650206149969" />
   </component>
 </project>
