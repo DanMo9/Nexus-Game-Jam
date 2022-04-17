@@ -153,5 +153,6 @@ public class Rat : MonoBehaviour
     public void DisableMovement()
     {
         movementEnabled = false;
+        messageDisplay.ClearIndicator();
     }
 }

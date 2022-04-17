@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073CF49-ED70-4E95-8B8A-66D540DEA948/f8/898045a4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeycodeUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightBathroomDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryButton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,7 +32,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LightBathroomDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DarkWorldSink.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DollHair.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldBedsideTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldCabinet.cs" />
@@ -42,11 +42,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DarkWorldCabinet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Note.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Number.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldBearCat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DarkWorldBearCat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/KeycodeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldBedsideTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LightWorldBearCat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DollDrawer.cs" />
       </list>
     </option>
   </component>
@@ -92,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650111382490</updated>
-      <workItem from="1650111417740" duration="27139000" />
+      <workItem from="1650111417740" duration="30052000" />
     </task>
     <servers />
   </component>

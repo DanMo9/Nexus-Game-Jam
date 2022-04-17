@@ -9,12 +9,14 @@
         <e p="Scripts" t="Include">
           <e p="DarkWorldBearCat.cs" t="Include" />
           <e p="DarkWorldCabinet.cs" t="Include" />
+          <e p="DollDrawer.cs" t="Include" />
           <e p="DollHair.cs" t="Include" />
           <e p="Dresser.cs" t="Include" />
           <e p="Flashlight.cs" t="Include" />
           <e p="InteractableObject.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="InventoryButton.cs" t="Include" />
+          <e p="KeycodeUI.cs" t="Include" />
           <e p="LightBathroomDoor.cs" t="Include" />
           <e p="LightWorldBearCat.cs" t="Include" />
           <e p="LightWorldBedsideTable.cs" t="Include" />
