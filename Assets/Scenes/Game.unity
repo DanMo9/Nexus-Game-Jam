@@ -4188,7 +4188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3db1ab603d452f8c1faa63374180aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: It appears to be locked
+  hint: It's locked.
   used: 0
   note: {fileID: 1274817356}
 --- !u!1 &1481342628
@@ -4644,7 +4644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272c6eddf255499bbf7ba941ece5b217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: A little water gathers at the bottom and I can see myself.
+  hint: A little water gathers at the bottom and I can see myself. Hi me!
   used: 0
   water: {fileID: 203680355}
 --- !u!1 &1679455146
