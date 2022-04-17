@@ -16,9 +16,9 @@ public class DarkWorldBearCat : InteractableObject
 
     public override bool Use(Rat rat)
     {
-        if (!HasEquipped(rat.inventory.Equipped, ToolData.ToolType.Scissor))
+        if (!HasEquipped(rat.inventory.Equipped, ToolData.ToolType.Thread, ToolData.ToolType.Cotton))
             return false;
-        
+
         var keyTool = GameObject.Instantiate(keyPrefab);
         keyTool.transform.position = keySpawn.transform.position;
         
