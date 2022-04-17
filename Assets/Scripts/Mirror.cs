@@ -36,6 +36,7 @@ public class Mirror : MonoBehaviour
         Camera.main.transform.position = new Vector3(pairedMirror.parentRoom.transform.position.x,
             pairedMirror.parentRoom.transform.position.y, Camera.main.transform.position.z);
         
+        pairedMirror.parentRoom.OnRoomEntered();
         pairedMirror.onRatTeleported();
     }
 }
