@@ -16,6 +16,7 @@ public class Rat : MonoBehaviour
     
     private List<InteractableObject> interactableObjects = new List<InteractableObject>();
     private List<Tool> nearbyTools = new List<Tool>();
+    private bool movementEnabled = true;
 
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class Rat : MonoBehaviour
 
     void Update()
     {
+        if (!movementEnabled) return;
         Move();
         Interact();
     }
@@ -48,7 +50,6 @@ public class Rat : MonoBehaviour
     private void Interact()
     {
         SetInteractionText();
-
         InteractWithObjects();
     }
 
@@ -142,5 +143,15 @@ public class Rat : MonoBehaviour
             lightWorldMouse.SetActive(false);
             darkWorldMouse.SetActive(true);
         }
+    }
+
+    public void EnableMovement()
+    {
+        movementEnabled = true;
+    }
+
+    public void DisableMovement()
+    {
+        movementEnabled = false;
     }
 }
