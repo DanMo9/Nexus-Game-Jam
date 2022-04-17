@@ -21,7 +21,7 @@ public class DarkRoomBeforeFlashlight : MonoBehaviour
             if (rat.inventory.Tools.Any(x => x.type == ToolData.ToolType.Flashlight))
             {
                 done = true;
-                messageDisplay.SetMessage("Much less scary now that I have a flashlight. Even if it barely works...", 3);
+                messageDisplay.SetMessage("Much less scary now that I have a flashlight. Even if it barely works...", 6);
                 rat.DisableMovement();
                 StartCoroutine(FadeOutDarkness());
             }

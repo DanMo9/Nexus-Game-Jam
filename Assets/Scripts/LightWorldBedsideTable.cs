@@ -12,6 +12,7 @@ public class LightWorldBedsideTable : InteractableObject
     {
         keycodeUI.OnUnlocked += () =>
         {
+            if (onUseSound != null) GetComponent<AudioSource>().PlayOneShot(onUseSound);
             used = true;
             rat.EnableMovement();
             DollDrawer.SetActive(true);

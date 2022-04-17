@@ -1291,6 +1291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: I dont want to help you! You hurt me!
   used: 0
+  onUseSound: {fileID: 8300000, guid: e6d69c02707146c45aaebbb9b1dd72a2, type: 3}
   fixedGo: {fileID: 2103115992}
   keySpawn: {fileID: 1493161423}
   keyPrefab: {fileID: 1025293593334678750, guid: bf0f7429e558ea94495ad2836711de3f, type: 3}
@@ -2317,7 +2318,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2142172300, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
   m_PrefabInstance: {fileID: 3802488230382617234}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 675510337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31719d0bdd5d5df419b6e5046ffea4a8, type: 3}
@@ -2404,6 +2405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: Yayyyy you did it!
   used: 0
+  onUseSound: {fileID: 0}
 --- !u!58 &473752482
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2507,6 +2509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: It's broken. I can't go through.
   used: 0
+  onUseSound: {fileID: 8300000, guid: cd401313719f2fe4484e60b5bf8e9122, type: 3}
   mirror: {fileID: 403689839}
   fixedMirror: {fileID: 21300000, guid: 07a32011ec2b634449033fdd04fa050b, type: 3}
 --- !u!1 &565553298
@@ -2648,6 +2651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: Yayyyy you did it!
   used: 0
+  onUseSound: {fileID: 0}
 --- !u!58 &586337099
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2810,17 +2814,118 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &675510337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2142172295, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
+  m_PrefabInstance: {fileID: 3802488230382617234}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &675510338 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4157113399808964701, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
   m_PrefabInstance: {fileID: 3802488230382617234}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 675510337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f3c42c15a29e4b43b2e404ac26d7584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &675510344
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675510337}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &680594528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5992267235582269680, guid: 87137bd21cc85564387b15330746f116, type: 3}
@@ -2840,6 +2945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: 
   used: 0
+  onUseSound: {fileID: 8300000, guid: 9699c9b77233e84419cbaa27a69fd83f, type: 3}
   keycodeUI: {fileID: 322054204}
   DollDrawer: {fileID: 788930880}
 --- !u!4 &680594533 stripped
@@ -2847,6 +2953,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7207349752598480294, guid: 87137bd21cc85564387b15330746f116, type: 3}
   m_PrefabInstance: {fileID: 1984133143725111100}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &680594536
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680594528}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &689874947 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6656222818304394337, guid: 87137bd21cc85564387b15330746f116, type: 3}
@@ -3521,6 +3723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: I always hated dolls.
   used: 0
+  onUseSound: {fileID: 8300000, guid: 309550e289de900478fc59f209bdda30, type: 3}
   cutDollSprite: {fileID: 21300000, guid: 4d45f274febf6cb46b4ca58e68f2a6e0, type: 3}
   Hair: {fileID: 1355718558}
 --- !u!60 &788930884
@@ -4335,6 +4538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: Yayyyy you did it!
   used: 0
+  onUseSound: {fileID: 0}
 --- !u!58 &877031561
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4631,6 +4835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: Wish I could get up there
   used: 0
+  onUseSound: {fileID: 8300000, guid: 9df5f9f557e80494da045f24b6d7cbc9, type: 3}
   collidersToTurnOff:
   - {fileID: 965130186}
   collidersToTurnOn:
@@ -4846,6 +5051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: Yayyyy you did it!
   used: 0
+  onUseSound: {fileID: 0}
 --- !u!58 &972673427
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5027,6 +5233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: Yayyyy you did it!
   used: 0
+  onUseSound: {fileID: 0}
 --- !u!58 &981311808
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5954,6 +6161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: Yayyyy you did it!
   used: 0
+  onUseSound: {fileID: 0}
 --- !u!58 &1327670550
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6409,6 +6617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: It's locked.
   used: 0
+  onUseSound: {fileID: 8300000, guid: 9699c9b77233e84419cbaa27a69fd83f, type: 3}
   note: {fileID: 1194656097}
 --- !u!1 &1481342628
 GameObject:
@@ -6865,6 +7074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: A little water gathers at the bottom and I can see myself. Hi me!
   used: 0
+  onUseSound: {fileID: 8300000, guid: 76f0119e1a8361b449b27ffe6bb6130d, type: 3}
   water: {fileID: 203680355}
 --- !u!1 &1662060565
 GameObject:
@@ -9504,6 +9714,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.89
       objectReference: {fileID: 0}
+    - target: {fileID: 6868811810237319392, guid: 2eeeef45d8988f94ea36afb6245c77a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6868811810237319393, guid: 2eeeef45d8988f94ea36afb6245c77a2, type: 3}
       propertyPath: m_Name
       value: Mirror
@@ -9583,6 +9797,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageDisplay: {fileID: 675510338}
+  cheering: {fileID: 8300000, guid: b00bcf5a2666e0f479fba405c2dca92d, type: 3}
+--- !u!82 &2134897244
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436284449}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &338629570846744879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9936,6 +10247,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 616694075644794439, guid: e7a2b3bb402bb804c894ab1a39e7da69, type: 3}
     - target: {fileID: 953553519, guid: 87137bd21cc85564387b15330746f116, type: 3}
+      propertyPath: onUseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 309550e289de900478fc59f209bdda30, type: 3}
+    - target: {fileID: 953553519, guid: 87137bd21cc85564387b15330746f116, type: 3}
       propertyPath: rippedSprite
       value: 
       objectReference: {fileID: 21300000, guid: f3199b4b8a4c4244a85b44df73632953, type: 3}
@@ -10151,6 +10466,10 @@ PrefabInstance:
       propertyPath: hint
       value: I can't reach. If only I had arms...
       objectReference: {fileID: 0}
+    - target: {fileID: 4773173907837611423, guid: 87137bd21cc85564387b15330746f116, type: 3}
+      propertyPath: onUseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9df5f9f557e80494da045f24b6d7cbc9, type: 3}
     - target: {fileID: 4955973948987312435, guid: 87137bd21cc85564387b15330746f116, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -10260,6 +10579,10 @@ PrefabInstance:
       value: It's locked.
       objectReference: {fileID: 0}
     - target: {fileID: 7368913865902327024, guid: 87137bd21cc85564387b15330746f116, type: 3}
+      propertyPath: onUseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9699c9b77233e84419cbaa27a69fd83f, type: 3}
+    - target: {fileID: 7368913865902327024, guid: 87137bd21cc85564387b15330746f116, type: 3}
       propertyPath: flashLightSpawn
       value: 
       objectReference: {fileID: 240817875}
@@ -10280,6 +10603,14 @@ PrefabInstance:
       propertyPath: skipCutscene
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2142172300, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
+      propertyPath: onEquipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d5111dc07754dcb4c96b311cb3bbb0de, type: 3}
+    - target: {fileID: 2142172300, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
+      propertyPath: onUnEquipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 79de256383fc3d54499e16a90fedd7e7, type: 3}
     - target: {fileID: 3802488230087987630, guid: 1aea17f914188a14d838a4efe0841f6f, type: 3}
       propertyPath: m_Name
       value: Rat

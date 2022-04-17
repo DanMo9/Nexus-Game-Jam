@@ -14,12 +14,16 @@ public class Rat : MonoBehaviour
     public GameObject lightWorldMouse;
     public GameObject darkWorldMouse;
     
+    public AudioClip PickUpSound;
+    
     private List<InteractableObject> interactableObjects = new List<InteractableObject>();
     private List<Tool> nearbyTools = new List<Tool>();
     private bool movementEnabled = true;
+    private AudioSource audioSource;
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         ChangeWorld(World.light);
     }
 
@@ -67,6 +71,8 @@ public class Rat : MonoBehaviour
                 }
                 else
                 {
+                    if (interactableObject.onUseSound != null)
+                        audioSource.PlayOneShot(interactableObject.onUseSound);
                     interactableObject.used = true;
                 }
             }
@@ -74,6 +80,7 @@ public class Rat : MonoBehaviour
             List<Tool> toRemove = new List<Tool>();
             foreach (var nearbyTool in nearbyTools)
             {
+                audioSource.PlayOneShot(PickUpSound);
                 inventory.AddTool(nearbyTool.toolData);
                 toRemove.Add(nearbyTool);
             }

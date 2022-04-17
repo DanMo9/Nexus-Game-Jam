@@ -9,7 +9,8 @@ public class Darkness : MonoBehaviour
     public float minAlpha = .75f;
     public float maxAlpha = 1f;
     public float frequency = 3f;
-
+    public float fadeOutTime = 6f;
+    
     private enum Direction
     {
         Up,
@@ -82,7 +83,7 @@ public class Darkness : MonoBehaviour
             foreach (var spriteRenderer in renderers)
             {
                 var currentAlpha = spriteRenderer.renderer.color.a;
-                var newAlpha = currentAlpha - Time.deltaTime/frequency;
+                var newAlpha = currentAlpha - Time.deltaTime/fadeOutTime;
                 spriteRenderer.renderer.color = new Color(0, 0, 0, newAlpha);
 
                 if (newAlpha > 0)

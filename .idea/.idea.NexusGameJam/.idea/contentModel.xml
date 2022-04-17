@@ -18,6 +18,7 @@
           <e p="Flashlight.cs" t="Include" />
           <e p="GameOver.cs" t="Include" />
           <e p="InteractableObject.cs" t="Include" />
+          <e p="IntroCutScene.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="InventoryButton.cs" t="Include" />
           <e p="KeycodeUI.cs" t="Include" />
@@ -29,6 +30,7 @@
           <e p="LightWorldSink.cs" t="Include" />
           <e p="MessageDisplay.cs" t="Include" />
           <e p="Mirror.cs" t="Include" />
+          <e p="Music.cs" t="Include" />
           <e p="Note.cs" t="Include" />
           <e p="Number.cs" t="Include" />
           <e p="Rat.cs" t="Include" />
