@@ -2403,7 +2403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceed791f38dd426ab73b32beb7eca8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: Yayyyy you did it!
+  hint: You're finally here!
   used: 0
   onUseSound: {fileID: 0}
 --- !u!58 &473752482
@@ -2681,7 +2681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceed791f38dd426ab73b32beb7eca8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: Yayyyy you did it!
+  hint: I'm so happy!
   used: 0
   onUseSound: {fileID: 0}
 --- !u!58 &586337099
@@ -5081,7 +5081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceed791f38dd426ab73b32beb7eca8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: Yayyyy you did it!
+  hint: You are the chosen one!
   used: 0
   onUseSound: {fileID: 0}
 --- !u!58 &972673427
@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceed791f38dd426ab73b32beb7eca8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: Yayyyy you did it!
+  hint: We've been waiting for you!
   used: 0
   onUseSound: {fileID: 0}
 --- !u!58 &981311808
@@ -6191,7 +6191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceed791f38dd426ab73b32beb7eca8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: Yayyyy you did it!
+  hint: You made it!
   used: 0
   onUseSound: {fileID: 0}
 --- !u!58 &1327670550
