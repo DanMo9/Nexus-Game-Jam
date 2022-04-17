@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0563f764b7d645f68f6a84792b3b1108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: I DONT WANT TO HELP YOU. YOU HURT ME.
+  hint: I dont want to help you!
   used: 0
   fixedGo: {fileID: 2103115992}
   keySpawn: {fileID: 1493161423}
