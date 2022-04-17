@@ -17,7 +17,7 @@ public class LightWorldBearCat : InteractableObject
 
     public override bool Use(Rat rat)
     {
-        if (!HasEquipped(rat.inventory.Equipped, ToolData.ToolType.Thread, ToolData.ToolType.Cotton))
+        if (!HasEquipped(rat.inventory.Equipped, ToolData.ToolType.Scissor))
             return false;
 
         spriteRenderer.sprite = cutSprite;

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
    public List<ToolData> Equipped { get; } = new List<ToolData>();
+   
+   public Action<ToolData> OnUnEquipped = t => {};
    public Action<ToolData> OnEquipped = t => {}; 
    
    [SerializeField]
@@ -27,6 +29,7 @@ public class Inventory : MonoBehaviour
                if (Equipped.Contains(toolData))
                {
                   Equipped.Remove(toolData);
+                  OnUnEquipped(toolData);
                   button.SetUnEquipped();
                }
                else

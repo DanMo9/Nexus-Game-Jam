@@ -8,6 +8,7 @@ using UnityEngine.U2D;
 public class Flashlight : MonoBehaviour
 {
     public Inventory inventory;
+    public Rat rat;
     private SpriteShapeRenderer spriteShapeRenderer;
 
     private void Awake()
@@ -18,18 +19,32 @@ public class Flashlight : MonoBehaviour
         {
             if (data.type == ToolData.ToolType.Flashlight) spriteShapeRenderer.enabled = true;
         };  
+        
+        inventory.OnUnEquipped += data =>
+        {
+            if (data.type == ToolData.ToolType.Flashlight) spriteShapeRenderer.enabled = false;
+        };  
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!spriteShapeRenderer.enabled) return;
+        
         var number = other.gameObject.GetComponent<Number>();
         if (number != null) number.Display();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        if (!spriteShapeRenderer.enabled) return;
+
         var number = other.gameObject.GetComponent<Number>();
         if (number != null) number.Hide();
     }
 
+    private void Update()
+    {
+        transform.position = rat.transform.position;
+        transform.rotation = rat.transform.rotation;
+    }
 }

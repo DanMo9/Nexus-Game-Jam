@@ -9,8 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="DarkWorldBearCat.cs" t="Include" />
           <e p="DarkWorldCabinet.cs" t="Include" />
-          <e p="DarkWorldSink.cs" t="Include" />
           <e p="DollHair.cs" t="Include" />
+          <e p="Dresser.cs" t="Include" />
+          <e p="Flashlight.cs" t="Include" />
           <e p="InteractableObject.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="InventoryButton.cs" t="Include" />
@@ -18,8 +19,11 @@
           <e p="LightWorldBearCat.cs" t="Include" />
           <e p="LightWorldBedsideTable.cs" t="Include" />
           <e p="LightWorldCabinet.cs" t="Include" />
+          <e p="LightWorldSink.cs" t="Include" />
           <e p="MessageDisplay.cs" t="Include" />
           <e p="Mirror.cs" t="Include" />
+          <e p="Note.cs" t="Include" />
+          <e p="Number.cs" t="Include" />
           <e p="Rat.cs" t="Include" />
           <e p="Room.cs" t="Include" />
           <e p="Tool.cs" t="Include" />
@@ -57,6 +61,20 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
             <e p="EmojiOne.json" t="Include" />
           </e>
+        </e>
+        <e p="Universal Sound FX" t="Include">
+          <e p="#Game Genre References" t="Include">
+            <e p="8bit and Retro.txt" t="Include" />
+            <e p="Fighting.txt" t="Include" />
+            <e p="First Person Shooter (FPS).txt" t="Include" />
+            <e p="Physics.txt" t="Include" />
+            <e p="Platform.txt" t="Include" />
+            <e p="Puzzle.txt" t="Include" />
+            <e p="Real Time Stategy (RTS) Medieval.txt" t="Include" />
+            <e p="Real Time Stategy (RTS) Sci-Fi.txt" t="Include" />
+            <e p="Shoot em Up.txt" t="Include" />
+          </e>
+          <e p="version_history.txt" t="Include" />
         </e>
       </e>
       <e p="NexusGameJam.sln" t="IncludeFlat" />
