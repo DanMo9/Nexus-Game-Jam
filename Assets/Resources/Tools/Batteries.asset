@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6956d0be84584a34bd269f522f23b3b2, type: 3}
-  m_Name: Doll Hair
+  m_Name: Batteries
   m_EditorClassIdentifier: 
-  type: 7
-  description: Eww nows its even creppier
-  sprite: {fileID: 21300000, guid: 842545b747664334ab5d84cff6c3f399, type: 3}
+  type: 0
+  description: POWER!!!
+  sprite: {fileID: 21300000, guid: 315162eed2f927d498c31788c87d2988, type: 3}

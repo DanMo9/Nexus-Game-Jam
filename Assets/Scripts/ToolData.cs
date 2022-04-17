@@ -14,7 +14,8 @@ public class ToolData : ScriptableObject
         Doll,
         DollHair,
         Glue,
-        Box
+        Box,
+        Batteries
     }
     
     public ToolType type;
