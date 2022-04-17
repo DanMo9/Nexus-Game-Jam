@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
    public List<ToolData> Equipped { get; } = new List<ToolData>();
+   public IEnumerable<ToolData> Tools => tools;
    
    public Action<ToolData> OnUnEquipped = t => {};
    public Action<ToolData> OnEquipped = t => {}; 
@@ -47,23 +48,7 @@ public class Inventory : MonoBehaviour
    {
       if (tools.Contains(toolData)) return;
       
-      var image = buttons[tools.Count].image;
-      image.sprite = toolData.sprite;
-      image.color = Color.white;
-      
+      buttons[tools.Count].SetToolSprite(toolData);
       tools.Add(toolData);
-   }
-
-   public void RemoveTool(ToolData toolData)
-   {
-      if (!tools.Contains(toolData)) return;
-      
-      var toolIndex = tools.IndexOf(toolData);
-      
-      var image = buttons[toolIndex].image;
-      image.sprite = null;
-      image.color = Color.clear;
-      
-      tools.Remove(toolData);
    }
 }

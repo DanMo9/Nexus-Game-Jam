@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    public Rat rat;
+    public MessageDisplay messageDisplay;
     
     private void Start()
     {
         var mirror = GetComponent<Mirror>();
         mirror.onRatTeleported += () =>
         {
-            mirror.enabled = false;
-            rat.DisableMovement();
+            messageDisplay.SetMessage("You escape! Press ESC to exit", 1000);
         };
     }
 }

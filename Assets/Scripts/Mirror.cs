@@ -22,12 +22,20 @@ public class Mirror : MonoBehaviour
     {
         if (pairedMirror == null || isLocked) return;
         
-        var mouse = other.transform.GetComponent<Rat>();
-        mouse.ChangeWorld(pairedMirror.parentRoom.worldType);
+        var rat = other.transform.GetComponent<Rat>();
+        TeleportRat(rat);
+    }
+
+    public void TeleportRat(Rat rat)
+    {
+        rat.ChangeWorld(pairedMirror.parentRoom.worldType);
+
+        rat.transform.position = pairedMirror.spawnPoint.position;
+        rat.transform.rotation = pairedMirror.spawnPoint.rotation;
+
+        Camera.main.transform.position = new Vector3(pairedMirror.parentRoom.transform.position.x,
+            pairedMirror.parentRoom.transform.position.y, Camera.main.transform.position.z);
         
-        other.transform.position = pairedMirror.spawnPoint.position;
-        other.transform.rotation = pairedMirror.spawnPoint.rotation;
-        
-        Camera.main.transform.position = new Vector3(pairedMirror.parentRoom.transform.position.x, pairedMirror.parentRoom.transform.position.y, Camera.main.transform.position.z);
+        pairedMirror.onRatTeleported();
     }
 }

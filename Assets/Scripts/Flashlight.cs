@@ -18,8 +18,11 @@ public class Flashlight : MonoBehaviour
         spriteShapeRenderer.enabled = false;
         inventory.OnEquipped += data =>
         {
-            ;
-            if (data.type == ToolData.ToolType.Flashlight && rat.inventory.Equipped.Any(x => x.type == ToolData.ToolType.Batteries)) spriteShapeRenderer.enabled = true;
+            if (data.type == ToolData.ToolType.Flashlight && rat.inventory.Equipped.Any(x => x.type == ToolData.ToolType.Batteries) ||
+                data.type == ToolData.ToolType.Batteries && rat.inventory.Equipped.Any(x => x.type == ToolData.ToolType.Flashlight))
+            {
+                spriteShapeRenderer.enabled = true;
+            }
         };  
         
         inventory.OnUnEquipped += data =>
